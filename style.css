@@ -1,0 +1,36 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: "jmh";
+    src: url(./Fontes/jmh_typewriter_dry/);
+}
+
+:root{
+   --cinza-menu: #585757;
+   --branco: #ffffff;
+   --verde-principal: #2D3826;
+   --preto: #000000;
+   --cinza-card: #D9D9D9;
+   --verde-card: #7B8D6F;
+}
+
+.espacoslaterais{
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.banner{
+    background-image: url(./img/banner.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+header.espacoslaterais img{
+    width: 125px;
+}
+
