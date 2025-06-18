@@ -9,6 +9,11 @@
     src: url(./Fontes/jmh_typewriter_dry/);
 }
 
+@font-face {
+    font-family: "Bell MT";
+    src: url(./Fontes/bell-mt-maisfontes.1964/bell-mt.ttf);
+}
+
 :root {
     --cinza-menu: #585757;
     --branco: #ffffff;
@@ -96,7 +101,7 @@ header {
 
 
 .conteudo-sobre p {
-    font-family: "Baskerville", Old-Face;
+    font-family: "Bell", MT;
     font-size: 20px;
     text-align: left;
     margin-top: 30px;
@@ -225,7 +230,7 @@ body {
     margin-top: 60px;
 }
 
-.titulo {
+.titulo2 {
     background-color: var(--verde-principal);
     color: #ffffff;
     font-size: 20px;
@@ -246,35 +251,264 @@ body {
     gap: 20px;
     padding: 30px;
     max-width: 1200px;
-    margin: 0 auto;
-    font-family: "Baskerville", Old-Face;
+    margin: 2500px;
+    font-family: "Bell MT", ;
 
 }
 
-.container-cards {
+.contem-card {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
 
-    position: relative;
 
+#servicos .card {
     width: 300px;
-    margin: 70px;
-    padding: 60px 40px;
-    border-radius: 50px;
-    background-color: var(--cinza-card);
-    box-shadow: 0 4px 8 px rgba(0, 0, 0, 0, 6);
+    margin: 20px;
+    padding: 40px 20px;
+    border-radius: 40px;
+    background-color: #F2F2F2;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
     text-align: center;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.cards-servico {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin:0 auto;
+    font-size: 20px;
+}
+.cards-servico {
+    width: 300px;
+    margin: 20px;
+    padding: 40px 20px;
+    border-radius: 40px;
+    background-color: #F2F2F2;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.cards-servico h3 {
+    font-size: 24px;
+    margin: 5px 0 30px;
+    color: var(--verde-card);
+    font-family: "Bell MT";
+    text-align: center;
+}
+.cards-servico p {
+    font-family: "Bell MT";
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.cards-servico svg {
+    color: var(--verde-card);
+    height: 75px;
+}
+
+.cards-servico:hover {
+    border: solid 3px var(--verde-card);
+}
+.cards-servico:hover h3 {
+    color: var(--verde-card);
+}
+
+.cards-servico:hover svg {
+    fill: var(--verde-card)
+}
+
+
+body {
+    margin: 0 auto;
+    font-family: "Baskerville", Old-Face;
+    background-color: var(--branco);
+}
+
+.titulo3 {
+    background-color: var(--verde-principal);
+    color: #ffffff;
+    font-size: 20px;
+    padding: 15px 20px;
+    border-radius: 15px;
+    width: fit-content;
+    box-shadow: 4px 4px 8px rgb(0, 0, 0, 0.3);
+    margin: 0 auto 30px auto;
+    text-align: center;
+    font-family: "Baskerville", Old-Face;
+    margin-top: 150px;
+
 
 }
 
-.container-cards {
-    margin-top: 20px;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: "Baskerville", Old-Face;
+}
+
+.Pacotes {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-left: 70px;
+    margin-right: 68px;
+
+}
+
+.Pacotes img {
+    height: 322px;
+    display: flex;
+    margin-left: 45px;
+    margin-right: 50px;
+    margin-top: 80px;
+
+}
+
+.Pacotes {
+    justify-content: space-between;
+}
+
+#contato form button:hover {
+    background-color: var(--verde-principal);
+}
+
+.titulo h2{
+
+   
+}
+
+section.newsletter {
+      max-width: 600px;
+      margin: 0 auto 120px;
+      padding: 0 1rem;
+      user-select: none;
+      margin-top: 300px;
+    }
+    section.newsletter h3 {
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: #2a5934;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+    form.newsletter-form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      
+    }
+    form.newsletter-form label {
+      font-weight: 600;
+      color: #2D3826;
+    }
+    form.newsletter-form input {
+      padding: 12px 16px;
+      font-size: 1rem;
+      border: 2px solid #2D3826;
+      border-radius: 12px;
+      outline-offset: 2px;
+      transition: border-color 0.3s ease;
+      
+    }
+    form.newsletter-form input:focus {
+      border-color: #2D3826;
+    }
+    form.newsletter-form button {
+      background-color: #2D3826;
+      color: white;
+      font-weight: 700;
+      padding: 14px;
+      border: none;
+      border-radius: 12px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    form.newsletter-form button:hover {
+      background-color: #2D3826;
+    }
+
+
+
+
+
+
+    
+body{
+  margin: 0;
+  background-color: #7B8D6F;
+  font-family: Arial, sans-serif;
+}
+
+.footer {
+  background-color:#2D3826;
+   /* verde médio */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px;
+  color: #fff;
+  margin-top: -20px;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-logo img {
+  width: 200px; 
+  margin-bottom: 20px;
+}
+
+.footer-logo p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footer-logo span {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.social-item i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.social-item span {
+  font-size: 16px;
 }
