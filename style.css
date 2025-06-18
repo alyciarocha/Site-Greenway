@@ -1,36 +1,280 @@
-*{
+* {
     margin: 0%;
     padding: 0;
     box-sizing: border-box;
 }
 
-@font-face{
+@font-face {
     font-family: "jmh";
     src: url(./Fontes/jmh_typewriter_dry/);
 }
 
-:root{
-   --cinza-menu: #585757;
-   --branco: #ffffff;
-   --verde-principal: #2D3826;
-   --preto: #000000;
-   --cinza-card: #D9D9D9;
-   --verde-card: #7B8D6F;
+:root {
+    --cinza-menu: #585757;
+    --branco: #ffffff;
+    --verde-principal: #2D3826;
+    --preto: #000000;
+    --cinza-card: #D9D9D9;
+    --verde-card: #7B8D6F;
 }
 
-.espacoslaterais{
+.espacoslaterais {
     width: 80%;
     max-width: 1400px;
     margin: 0 auto;
 }
 
-.banner{
+.banner {
     background-image: url(./img/banner.png);
     background-repeat: no-repeat;
     height: 100vh;
 }
 
-header.espacoslaterais img{
-    width: 125px;
+header.espacoslaterais img {
+    width: 240px;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    max-width: 700px;
+    width: 70%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    color: white;
+    font-size: 30px;
+    font-family: "Baskerville", Old-Face;
+    text-decoration: underline transparent;
+    text-decoration-thickness: 2px;
+    transition: text-decoration 500ms ease;
+}
+
+.menu a:hover {
+    text-decoration: var(--cinza-menu);
+}
+
+.conteudo-banner {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 365px;
+    padding-right: 150px;
+}
+
+.conteudo-banner h1 {
+    color: white;
+}
+
+#sobre img {
+    height: 70vh;
+    max-width: 310px;
+    width: 40%;
+    border-radius: 40px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+}
+
+#sobre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 300px;
+
+}
+
+#sobre h1 {
+    margin-right: 5px;
+}
+
+
+.conteudo-sobre p {
+    font-family: "Baskerville", Old-Face;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 30px;
+    margin-inline: 65px;
+    margin-bottom: 100px;
+}
+
+body {
+    margin: 0 auto;
+    font-family: "Baskerville", Old-Face;
+    background-color: var(--branco);
+}
+
+.titulo {
+    background-color: var(--verde-principal);
+    color: #ffffff;
+    font-size: 20px;
+    padding: 15px 20px;
+    border-radius: 15px;
+    width: fit-content;
+    box-shadow: 4px 4px 8px rgb(0, 0, 0, 0.3);
+    margin: 0 auto 30px auto;
+    text-align: center;
+    font-family: "Baskerville", Old-Face;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: "Baskerville", Old-Face;
+}
+
+.texto-viagens {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100px;
+    margin-top: -150px;
+    margin-bottom: -180px;
+}
+
+.texto-viagens h2 {
+    display: flex;
+    font-family: "Baskerville", Old-Face;
+    font-size: 55px;
+    color: var(--verde-card);
+    margin: 0;
+    margin-top: -2500;
+}
+
+
+.post img {
+    height: 70vh;
+    max-width: 310px;
+    width: 40%;
+    border-radius: 40px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+}
+
+.post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 300px;
+
+}
+
+.post img {
+    height: 70vh;
+    max-width: 310px;
+    width: 40%;
+    border-radius: 40px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 300px;
+
+}
+
+.post img {
+    height: 70vh;
+    max-width: 310px;
+    width: 40%;
+    border-radius: 40px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+}
+
+.post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 200px;
+    gap: 30px;
+    margin-bottom: 90px;
+
+
+
+}
+
+.post :hover {
+    transform: scale(1.1);
+    translate: (-5px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0, 3);
+    filter: opacity(0, 9);
+
+
+}
+
+body {
+    margin: 0 auto;
+    font-family: "Baskerville", Old-Face;
+    background-color: var(--branco);
+    margin-top: 60px;
+}
+
+.titulo {
+    background-color: var(--verde-principal);
+    color: #ffffff;
+    font-size: 20px;
+    padding: 15px 20px;
+    border-radius: 15px;
+    width: fit-content;
+    box-shadow: 4px 4px 8px rgb(0, 0, 0, 0.3);
+    margin: 0 auto 30px auto;
+    text-align: center;
+    font-family: "Baskerville", Old-Face;
+    margin-bottom: 60px;
+    margin-top: 200px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: "Baskerville", Old-Face;
+
+}
+
+.container-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    position: relative;
+
+    width: 300px;
+    margin: 70px;
+    padding: 60px 40px;
+    border-radius: 50px;
+    background-color: var(--cinza-card);
+    box-shadow: 0 4px 8 px rgba(0, 0, 0, 0, 6);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.container-cards {
+    margin-top: 20px;
+}
